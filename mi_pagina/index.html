@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Digital - 3°H</title>
+    <!-- Iconos de Bootstrap e Integración de CSS Externo -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado Principal -->
+    <header>
+        <h1>Mi Portafolio Digital</h1>
+        <p>Dante Bellizzi y Juan Prieto - 3ºH</p>
+    </header>
+
+    <!-- Barra de Navegación -->
+    <nav>
+        <a href="https://github.com/Humanidades2026/Inform-tica" target="_blank">
+            <i class="bi bi-github"></i> GitHub
+        </a>
+        <a href="https://drive.google.com/drive/folders/1Xgcanw8O7dKTSWCWfkYQDMkpa9wfxB5I" target="_blank">
+            <i class="bi bi-google"></i> Google Drive
+        </a>
+    </nav>
+
+    <!-- Contenedor Principal con Menú Lateral Flexbox y Visor Iframe -->
+    <main class="flex-container">
+       
+        <!-- Menú Lateral -->
+        <aside>
+            <h3>Mis Ejercicios</h3>
+            <ul>
+                <li>
+                    <a href="./pages/listas.html" target="visor">
+                        <i class="bi bi-list-task"></i> Ejercicio 1: Listas
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/tabla1.html" target="visor">
+                        <i class="bi bi-table"></i> Ejercicio 2: Tablas
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/tienda.html" target="visor">
+                        <i class="bi bi-shop"></i> Ejercicio 3: Trabajo Práctico
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/semantica.html" target="visor">
+                        <i class="bi bi-code-square"></i> Ejercicio 4: Semántica
+                    </a>
+                </li>
+                <li>
+                    <a href="./index.html" target="visor">
+                        <i class="bi bi-person-badge"></i> Mi Página Personal
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/deportes.html" target="visor">
+                        <i class="bi bi-trophy"></i> Deportes
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/videojuegos.html" target="visor">
+                        <i class="bi bi-controller"></i> Videojuegos (BO2)
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Sección del Visor (Iframe) -->
+        <section class="visor-section">
+            <iframe src="./index.html" name="visor" title="Visor de Ejercicios"></iframe>
+        </section>
+
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>Diseñado por: <span>Dante Bellizzi</span> y <span>Juan Prieto</span> | Curso: <span>3º H</span></p>
+    </footer>
+
+</body>
+</html>

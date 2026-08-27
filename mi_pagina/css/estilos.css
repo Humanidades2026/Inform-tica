@@ -1,0 +1,260 @@
+/* ==========================================================================
+   HOJA DE ESTILOS CSS UNIFICADA - PORTAFOLIO Y SITIO WEB PERSONAL
+   Autores: Dante Bellizzi y Juan Prieto - 3º H
+   ========================================================================== */
+
+/* 1. Reset básico y configuración general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* 2. Encabezado principal (Header) */
+header {
+    background-color: #1e293b;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+}
+
+header p {
+    color: #94a3b8;
+    font-size: 15px;
+}
+
+/* 3. Barra de Navegación (Nav) */
+nav {
+    background-color: #334155;
+    text-align: center;
+    padding: 12px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+nav a, nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover, nav ul li a:hover {
+    background-color: #0ea5e9;
+    color: #ffffff;
+}
+
+/* 4. Contenido Principal y Layout Flexbox (Portafolio) */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+main.flex-container {
+    display: flex;
+    gap: 20px;
+    min-height: 480px;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* Menú lateral (Aside) */
+aside {
+    width: 25%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border-right: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+aside h3 {
+    color: #1e293b;
+    border-bottom: 2px solid #0ea5e9;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside li {
+    margin: 10px 0;
+}
+
+aside a {
+    color: #475569;
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+aside a:hover {
+    background-color: #f1f5f9;
+    color: #0ea5e9;
+    padding-left: 16px;
+}
+
+/* Sección Visor Iframe */
+section.visor-section {
+    width: 75%;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+iframe {
+    width: 100%;
+    height: 480px;
+    border: 2px solid #334155;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+/* 5. Secciones y Artículos (Noticias / Semántica) */
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+section h2 {
+    color: #1e293b;
+    border-left: 5px solid #0ea5e9;
+    padding-left: 12px;
+    margin-bottom: 15px;
+}
+
+article {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 18px;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+article h3 {
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+/* 6. Estilos de Cards (Modelo de Cajas para Deportes y Videojuegos) */
+.card {
+    width: 360px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+    padding: 20px;
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+    background-color: #f9fafb;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #0f172a;
+    margin: 15px 0 10px 0;
+    font-size: 20px;
+}
+
+.card p {
+    text-align: justify;
+    font-size: 14px;
+    color: #475569;
+}
+
+/* 7. Tablas estilizadas (Ejercicios de Registro y Tienda) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+}
+
+table, th, td {
+    border: 1px solid #cbd5e1;
+}
+
+th {
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 12px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+/* 8. Pie de página (Footer) */
+footer {
+    background-color: #1e293b;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+    clear: both;
+    font-size: 14px;
+}
+
+footer span {
+    color: #0ea5e9;
+    font-weight: bold;
+}
